@@ -22,4 +22,5 @@ include(qtquick2applicationviewer/qtquick2applicationviewer.pri)
 qtcAddDeployment()
 
 OTHER_FILES += \
-    qml/natwest-balancer/MenuItem.qml
+    qml/natwest-balancer/MenuItem.qml \
+    qml/natwest-balancer/ViewManager.qml

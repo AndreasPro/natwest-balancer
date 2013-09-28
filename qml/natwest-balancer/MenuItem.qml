@@ -3,6 +3,7 @@ import QtQuick 2.0
 Rectangle
 {
     property string text
+    property View view
 
     id: menuItem
 
@@ -10,7 +11,25 @@ Rectangle
     height: parent.height
     color: "#00000000"
 
+    state: "normal"
+
+    states: [
+
+        State {
+            name: "hover"
+            when: clickArea.containsMouse
+            PropertyChanges {
+                target: menuItemText
+                color: "#ff4352"
+
+            }
+        }
+
+    ]
+
+
     Text {
+
         id: menuItemText
         color: "#ffffff"
         horizontalAlignment: Text.AlignHCenter
@@ -19,6 +38,7 @@ Rectangle
         anchors.leftMargin: 10
         anchors.rightMargin: 10
         text: parent.text
+
     }
 
     MouseArea
@@ -26,5 +46,9 @@ Rectangle
         id: clickArea
         width: parent.width
         height: parent.height
+        hoverEnabled: true
+
+        onClicked: viewManager.showView(view)
+
     }
 }
