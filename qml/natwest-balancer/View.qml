@@ -14,21 +14,13 @@ Rectangle {
     {
         id: header
         text: title
-        color: "#000000"
+        color: "#ffffff"
         width: parent.width
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.right: parent.right
         font.pixelSize: 40
-    }
-
-    Rectangle
-    {
-        id: content
-        anchors.top: header.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
+        anchors.topMargin: -40
     }
 
 }

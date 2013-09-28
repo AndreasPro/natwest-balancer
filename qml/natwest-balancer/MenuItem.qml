@@ -33,7 +33,7 @@ Rectangle
         id: menuItemText
         color: "#ffffff"
         horizontalAlignment: Text.AlignHCenter
-        font.pixelSize: 30
+        font.pixelSize: 35
         verticalAlignment: Text.AlignVCenter
         anchors.leftMargin: 10
         anchors.rightMargin: 10

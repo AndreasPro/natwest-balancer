@@ -6,8 +6,6 @@ Rectangle {
     default property alias content: viewsContainer.children
     property Item currentView
 
-    clip: true
-
     Rectangle
     {
         id: viewsContainer

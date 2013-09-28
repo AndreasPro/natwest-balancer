@@ -34,6 +34,7 @@ Rectangle {
 
     ViewManager {
         id: viewManager
+        z: 1
 
         anchors.top: header.bottom
         anchors.right: parent.right
@@ -72,6 +73,7 @@ Rectangle {
         width: parent.width
         height: 64
         color: header.color
+        z: 2
         anchors.bottom: parent.bottom
 
         Menu

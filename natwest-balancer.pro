@@ -12,7 +12,14 @@ QML_IMPORT_PATH =
 # MOBILITY +=
 
 # The .cpp file which was generated for your project. Feel free to hack it.
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    balanceentry.cpp \
+    account.cpp \
+    dbo.cpp \
+    criteria.cpp \
+    databasemanager.cpp \
+    accountdbo.cpp \
+    balanceentrydbo.cpp
 
 # Installation path
 # target.path =
@@ -24,3 +31,16 @@ qtcAddDeployment()
 OTHER_FILES += \
     qml/natwest-balancer/MenuItem.qml \
     qml/natwest-balancer/ViewManager.qml
+
+HEADERS += \
+    balanceentry.h \
+    account.h \
+    dbo.h \
+    criteria.h \
+    databasemanager.h \
+    accountdbo.h \
+    balanceentrydbo.h
+
+CONFIG += c++11
+
+QT += sql
